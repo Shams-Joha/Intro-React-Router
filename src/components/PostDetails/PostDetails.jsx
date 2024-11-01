@@ -8,7 +8,7 @@ const PostDetails = () => {
     const handleBtnClick = () => {
         navigate(-1);
     }
-    console.log(postId);
+    
     const { id, title, body } = post;
     return (
         <div>
