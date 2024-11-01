@@ -4,11 +4,11 @@ import { useParams } from "react-router-dom";
 const PostDetails = () => {
     const post = useLoaderData();
     const navigate = useNavigate();
-    const params = useParams();
+    const { postId } = useParams();
     const handleBtnClick = () => {
         navigate(-1);
     }
-    console.log(params);
+    console.log(postId);
     const { id, title, body } = post;
     return (
         <div>
